@@ -23,5 +23,5 @@ class GithubSimulation extends Simulation {
 		.queryParam("q", "gatling")
 		.check(status.is(200)))
 
-	setUp(scn.users(3).ramp(10).protocolConfig(httpConf))
+	setUp(scn.users(500).ramp(10).protocolConfig(httpConf))
 }
